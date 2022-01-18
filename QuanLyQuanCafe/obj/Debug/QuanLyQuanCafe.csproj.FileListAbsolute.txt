@@ -10,3 +10,4 @@ C:\Users\bachn\Documents\Programer\Project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Deb
 C:\Users\bachn\Documents\Programer\Project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\QuanLyQuanCafe.pdb
 C:\Users\bachn\Documents\Programer\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.exe
 C:\Users\bachn\Documents\Programer\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.pdb
+C:\Users\bachn\Documents\Programer\Project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.csproj.AssemblyReference.cache

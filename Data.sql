@@ -102,11 +102,7 @@ VALUES
 )
 GO
 
-SELECT
-  *
-FROM
-  dbo.Account
-GO
+
 
 CREATE PROC USP_GetAccountByUserName
 @UserName NVARCHAR(100)
@@ -117,3 +113,42 @@ END
 GO
 
 EXEC dbo.USP_GetAccountByUserName @UserName = N'admin'
+Go
+
+
+SELECT * FROM dbo.Account WHERE UserName = N'admin' AND passWord = N'2202'
+GO
+
+CREATE PROC USP_Login
+@userName NVARCHAR(100), @passWord NVARCHAR(100)
+AS
+BEGIN
+	SELECT * FROM dbo.Account WHERE UserName = @userName AND passWord = @passWord
+END
+GO
+
+DECLARE @i INT = 0
+
+WHILE @i <= 10
+BEGIN
+	INSERT dbo.FoodTable (name) VALUES (N'Bàn ' + CAST( @i AS NVARCHAR(100)))
+	SET @i = @i + 1
+END
+
+INSERT dbo.FoodTable (name,status) VALUES (N'Bàn DB', N'Full')
+SELECT * FROM FoodTable
+
+GO
+
+CREATE PROC USP_GetTableList
+AS
+BEGIN
+	SELECT * FROM dbo.FoodTable
+END
+GO
+
+
+USE master
+DROP DATABASE QuanLyQuanCafe
+GO
+
