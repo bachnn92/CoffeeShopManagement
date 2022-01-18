@@ -282,7 +282,6 @@ namespace QuanLyQuanCafe
             this.dtgvAccount.Name = "dtgvAccount";
             this.dtgvAccount.Size = new System.Drawing.Size(257, 311);
             this.dtgvAccount.TabIndex = 0;
-            this.dtgvAccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvAccount_CellContentClick);
             // 
             // panel34
             // 

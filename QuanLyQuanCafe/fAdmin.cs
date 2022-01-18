@@ -17,28 +17,8 @@ namespace QuanLyQuanCafe
         public fAdmin()
         {
             InitializeComponent();
-            LoadAccountList();
         }
 
-        void LoadFoodList()
-        {
-            string query = "SELECT * FROM dbo.food";
-
-            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "admin" });
-
-        }
-
-        void LoadAccountList()
-        {
-            string query = "dbo.USP_GetAccountByUserName @UserName";
-
-            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "admin" });
-
-        }
-
-        private void dtgvAccount_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

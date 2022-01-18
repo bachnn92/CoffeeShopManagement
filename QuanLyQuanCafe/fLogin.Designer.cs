@@ -33,7 +33,7 @@ namespace QuanLyQuanCafe
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtPassWord = new System.Windows.Forms.TextBox();
+            this.txbPassWord = new System.Windows.Forms.TextBox();
             this.lbPassWord = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbUsername = new System.Windows.Forms.TextBox();
@@ -56,6 +56,7 @@ namespace QuanLyQuanCafe
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(337, 138);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -77,21 +78,22 @@ namespace QuanLyQuanCafe
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txtPassWord);
+            this.panel3.Controls.Add(this.txbPassWord);
             this.panel3.Controls.Add(this.lbPassWord);
             this.panel3.Location = new System.Drawing.Point(20, 83);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(392, 51);
             this.panel3.TabIndex = 2;
             // 
-            // txtPassWord
+            // txbPassWord
             // 
-            this.txtPassWord.Location = new System.Drawing.Point(121, 13);
-            this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.Size = new System.Drawing.Size(249, 20);
-            this.txtPassWord.TabIndex = 2;
-            this.txtPassWord.UseSystemPasswordChar = true;
-            this.txtPassWord.UseWaitCursor = true;
+            this.txbPassWord.Location = new System.Drawing.Point(121, 13);
+            this.txbPassWord.Name = "txbPassWord";
+            this.txbPassWord.Size = new System.Drawing.Size(249, 20);
+            this.txbPassWord.TabIndex = 2;
+            this.txbPassWord.Text = "2202";
+            this.txbPassWord.UseSystemPasswordChar = true;
+            this.txbPassWord.UseWaitCursor = true;
             // 
             // lbPassWord
             // 
@@ -118,6 +120,7 @@ namespace QuanLyQuanCafe
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(249, 20);
             this.txbUsername.TabIndex = 1;
+            this.txbUsername.Text = "admin";
             // 
             // lbName
             // 
@@ -156,7 +159,7 @@ namespace QuanLyQuanCafe
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtPassWord;
+        private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.Label lbPassWord;
         private System.Windows.Forms.TextBox txbUsername;
         private System.Windows.Forms.Button btnExit;

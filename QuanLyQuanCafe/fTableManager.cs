@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyQuanCafe.DAO;
+using QuanLyQuanCafe.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,23 +17,22 @@ namespace QuanLyQuanCafe
         public fTableManager()
         {
             InitializeComponent();
+            LoadTable();
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        #region Method
+        void LoadTable()
         {
-            this.Close();
-        }
+            
+            List<Table> tableList = TableDAO.Instance.LoadTableList();
 
-        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fAccountProfile f = new fAccountProfile();
-            f.ShowDialog();
+            foreach (Table item in tableList)
+            {
+                Button btn = new Button(){ Width = TableDAO.TableWidth, Height = TableDAO.TableHeight};
+                flpTable.Controls.Add(btn);
+            }
+            
         }
-
-        private void adminmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fAdmin f = new fAdmin();
-            f.ShowDialog();
-        }
+        #endregion
     }
 }
